@@ -1,0 +1,19 @@
+{
+  "name": "t3kroots",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html *.md",
+    "build": "parcel build index.html *.md"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "elm-hot": "^1.1.6",
+    "node-elm-compiler": "^5.0.6",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-asset-copier": "^1.1.0",
+    "sass": "^1.34.0"
+  },
+  "assetsPath": "./assets/"
+}
