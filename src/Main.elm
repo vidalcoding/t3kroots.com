@@ -220,7 +220,7 @@ splash : Html.Html Msg
 splash =
     div [ class "splash splash--light" ]
         [ img
-            [ class "splash__image", src "/programming.svg" ]
+            [ class "splash__image", src "/img/programming.svg" ]
             []
         , div [ class "splash__title" ]
             [ h1 [][text "t3kRoots"]
