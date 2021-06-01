@@ -93,7 +93,7 @@ template/config/
 
 # Desktop Services Store on macOS
 .DS_Store
-dist
+/dist/
 
 # Exclude test assets
 /test-app/
