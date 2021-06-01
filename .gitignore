@@ -82,7 +82,7 @@ jspm_packages
 elm-stuff
 # elm-repl generated files
 repl-temp-*
-
+.parcel-cache
 # create-elm-app
 template/build
 template/elm-stuff
