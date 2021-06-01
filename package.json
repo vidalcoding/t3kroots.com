@@ -23,5 +23,8 @@
   "engines": {
     "node": 16.1
   },
-  "assetsPath": "./assets/"
+  "assetsPath": "./assets/",
+  "dependencies": {
+    "physical-cpu-count": "^2.0.0"
+  }
 }
