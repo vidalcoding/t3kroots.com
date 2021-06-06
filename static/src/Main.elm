@@ -250,9 +250,6 @@ update msg (Model p k md) =
                         Lesson s ->
                             getLesson s
 
-                        Home ->
-                            Browser.Navigation.replaceUrl k "/"
-
                         _ ->
                             Cmd.none
             in
