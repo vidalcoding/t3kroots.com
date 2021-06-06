@@ -455,6 +455,10 @@ $text-color: $independence;
     padding: 1rem;
     background-color: $primary;
     color: $minion-yellow;
+    display:flex;
+    flex-direction:row;
+    justify-items: center;
+    text-align: center;
 }
 
 .card__title {
@@ -476,6 +480,7 @@ $text-color: $independence;
     line-height: 1.5;
     margin-bottom: 1.25rem;
     font-weight: 400;
+    justify-content: center;
 }
 .card__button {
     appearance: none;
@@ -499,7 +504,11 @@ $text-color: $independence;
     }
     .header {
         width: 100%;
-        padding: 0 auto;
+        padding: 20px ;
+        display:flex;
+        flex-direction:row;
+        padding-left:20px;
+        padding-right:40px;
     }
     .splash {
         flex-direction: row-reverse;

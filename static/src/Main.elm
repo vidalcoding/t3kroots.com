@@ -143,7 +143,7 @@ schedule =
             [ h3 [] [ text " Sunday 3-4pm EST" ]
             , h3 [] [ text " Tuesday 4:30-5:30pm EST" ]
             ]
-        , a [ href "https://meet.google.com/azx-ptoc-nka", class "schedule__button" ] [ text "Join Now" ]
+        , a [ href "https://meet.google.com/vdp-jwry-gwy", class "schedule__button" ] [ text "Join Now" ]
         ]
 
 
@@ -154,7 +154,12 @@ lessons =
             1
             "https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1861/2017/06/23161835/apple-slicing-function.png"
             "What is a Function"
-            "What is a Function? Input and Ouput"
+            "What is a Function? Input and Ouput",
+         lesson
+            2
+            "https://media3.giphy.com/media/lyLRTrqRpW8YU/200w.gif?cid=82a1493beh7268a8wrtwhk5ehd9lui9z4hy2hgrgqlw1nwp7&rid=200w.gif"
+            "Values in Python"
+            "Values in Python"
         ]
 
 
@@ -182,7 +187,7 @@ lesson num photo_url name desc_ =
         photo_url
         name
         desc_
-        ("Lesson" ++ String.fromInt num)
+        ("Lesson " ++ String.fromInt num)
 
 
 card link_ photo_ title_ subtitle_ buttont_ =
