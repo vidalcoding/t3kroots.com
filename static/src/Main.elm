@@ -114,7 +114,7 @@ view (Model p _ s) =
             in
             { title = "t3kroots - Lesson " ++ String.fromInt i
             , body =
-                [ div [class "container"]
+                [ div [ class "container" ]
                     [ header, idk ]
                 ]
             }
@@ -154,8 +154,8 @@ lessons =
             1
             "https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1861/2017/06/23161835/apple-slicing-function.png"
             "What is a Function"
-            "What is a Function? Input and Ouput",
-         lesson
+            "What is a Function? Input and Ouput"
+        , lesson
             2
             "https://media3.giphy.com/media/lyLRTrqRpW8YU/200w.gif?cid=82a1493beh7268a8wrtwhk5ehd9lui9z4hy2hgrgqlw1nwp7&rid=200w.gif"
             "Values in Python"
@@ -228,7 +228,7 @@ splash =
             [ class "splash__image", src "/img/programming.svg" ]
             []
         , div [ class "splash__title" ]
-            [ h1 [][text "t3kRoots"]
+            [ h1 [] [ text "t3kRoots" ]
             , a [ href "/lessons", class "splash__button" ] [ text "Start Learning" ]
             ]
         ]
@@ -250,10 +250,13 @@ update msg (Model p k md) =
                         Lesson s ->
                             getLesson s
 
+                        Home ->
+                            Browser.Navigation.replaceUrl k "/"
+
                         _ ->
                             Cmd.none
             in
-            ( Model newpage k md, getLesson 1 )
+            ( Model newpage k md, nCmd )
 
         LinkClicked urlRequest ->
             case urlRequest of
