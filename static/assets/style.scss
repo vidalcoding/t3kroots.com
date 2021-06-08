@@ -16,6 +16,18 @@ $text-color: $independence;
     font-family: "Merriweather", serif;
     font-size: 16px;
 }
+.footer{
+    background-color:$primary;
+    min-height:5vh;
+     width: 100%;
+     margin-top:90px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-items: center;
+     color: whitesmoke;
+     text-align: center;
+}
 
 .container {
     display: flex;

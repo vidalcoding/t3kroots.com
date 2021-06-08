@@ -2,6 +2,9 @@ module Main exposing (main)
 
 import Browser
 import Browser.Navigation
+import Embed.Youtube exposing (..)
+import Embed.Youtube.Attributes exposing (..)
+import Embed.Youtube.Thumbnail as Thumb exposing (..)
 import Html exposing (a, button, div, h1, h3, img, p, text)
 import Html.Attributes exposing (class, href, src)
 import Http
@@ -56,18 +59,27 @@ main =
 --             UrlChanged Home
 
 
+layout content =
+    div [ class "container" ] ([ header ] ++ content ++ [ footer ])
+
+
+footer : Html.Html Msg
+footer =
+    div [ class "footer" ] [text "©t3kroots 2021"]
+
+
 view : Model -> Browser.Document Msg
 view (Model p _ s) =
     case p of
         Home ->
             { title = "t3kroots"
             , body =
-                [ div [ class "container" ]
-                    [ header
-                    , splash
+                [ layout
+                    [ splash
                     , schedule
                     , lessons
                     , resources
+                    , installation
                     ]
                 ]
             }
@@ -171,6 +183,18 @@ resources =
         ]
 
 
+installation : Html.Html Msg
+installation =
+    section "How To Install Python"
+        [ Embed.Youtube.fromString "YYXdXT2l-Gg"
+            |> Embed.Youtube.attributes
+                [ Embed.Youtube.Attributes.width 640
+                , Embed.Youtube.Attributes.height 400
+                ]
+            |> Embed.Youtube.toHtml
+        ]
+
+
 section : String -> List (Html.Html Msg) -> Html.Html Msg
 section title_ content_ =
     div [ class "section" ]
@@ -249,6 +273,9 @@ update msg (Model p k md) =
                     case newpage of
                         Lesson s ->
                             getLesson s
+
+                        Home ->
+                            Browser.Navigation.replaceUrl k "/"
 
                         _ ->
                             Cmd.none
