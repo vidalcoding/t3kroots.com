@@ -72,7 +72,7 @@ view : Model -> Browser.Document Msg
 view (Model p _ s) =
     case p of
         Home ->
-            { title = "t3kroots"
+           { title = "t3kroots"
             , body =
                 [ layout
                     [ splash
@@ -153,7 +153,7 @@ schedule =
         [ h1 [ class "schedule__title" ] [ text "Meeting Schedule" ]
         , div [ class "schedule__days" ]
             [ h3 [] [ text " Sunday 3-4pm EST" ]
-            , h3 [] [ text " Tuesday 4:30-5:30pm EST" ]
+            , h3 [] [ text " Thursday 6:30-7:30pm EST" ]
             ]
         , a [ href "https://meet.google.com/vdp-jwry-gwy", class "schedule__button" ] [ text "Join Now" ]
         ]
