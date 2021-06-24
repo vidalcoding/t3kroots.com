@@ -65,14 +65,14 @@ layout content =
 
 footer : Html.Html Msg
 footer =
-    div [ class "footer" ] [text "©t3kroots 2021"]
+    div [ class "footer" ] [ text "©t3kroots 2021" ]
 
 
 view : Model -> Browser.Document Msg
 view (Model p _ s) =
     case p of
         Home ->
-           { title = "t3kroots"
+            { title = "t3kroots"
             , body =
                 [ layout
                     [ splash
@@ -153,7 +153,7 @@ schedule =
         [ h1 [ class "schedule__title" ] [ text "Meeting Schedule" ]
         , div [ class "schedule__days" ]
             [ h3 [] [ text " Sunday 3-4pm EST" ]
-            , h3 [] [ text " Thursday 6:30-7:30pm EST" ]
+            , h3 [] [ text " Thursday 6-7pm EST" ]
             ]
         , a [ href "https://meet.google.com/vdp-jwry-gwy", class "schedule__button" ] [ text "Join Now" ]
         ]
@@ -172,6 +172,7 @@ lessons =
             "https://media3.giphy.com/media/lyLRTrqRpW8YU/200w.gif?cid=82a1493beh7268a8wrtwhk5ehd9lui9z4hy2hgrgqlw1nwp7&rid=200w.gif"
             "Values in Python"
             "Values in Python"
+        , lesson 3 "" "Overview" "Overview"
         ]
 
 
