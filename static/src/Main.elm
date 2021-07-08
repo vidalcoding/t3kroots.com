@@ -172,7 +172,6 @@ lessons =
             "https://media3.giphy.com/media/lyLRTrqRpW8YU/200w.gif?cid=82a1493beh7268a8wrtwhk5ehd9lui9z4hy2hgrgqlw1nwp7&rid=200w.gif"
             "Values in Python"
             "Values in Python"
-        , lesson 3 "" "Overview" "Overview"
         ]
 
 
