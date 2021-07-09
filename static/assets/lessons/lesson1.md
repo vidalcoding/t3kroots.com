@@ -1,8 +1,8 @@
 ## What is a Function?
 
-So as we begin to embark on our programming journey together. There is one concept that will come up time and time again. That concept is a function. 
+So as we begin to embark on our programming journey together, there is one concept that will come up time and time again. That concept is a function. 
 
-Simply put a function is a thing that takes in something and returns a result. To understand how pervasive this concept is lets look at a couple of different examples from a bunch of different areas.
+Simply put, a function is a thing that takes in something and returns a result. To understand how pervasive this concept is lets look at a couple of different examples from a bunch of different areas.
 
 
 ### Functions in the Wild
